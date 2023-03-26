@@ -1,0 +1,898 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 1100px;
+  height: 740px;
+}
+.container header {
+  position: relative;
+  padding-top: 10px;
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #e4e9f2;
+  margin-bottom: 90px;
+}
+.container header .header_content {
+  padding-top: 15px;
+  width: 589px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.container header .header_content .menu {
+  display: none;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(14, 11, 11, 0.826);
+}
+.container header .header_content .menu .toggle {
+  display: none;
+  z-index: 999;
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+}
+.container header .header_content .menu .toggle nav {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  position: absolute;
+  top: 100px;
+}
+.container header .header_content .menu .toggle nav li {
+  width: 40px;
+  padding: 15px 0px 15px 25px;
+  list-style: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #1d2026;
+  cursor: pointer;
+}
+.container header .header_content .menu .toggle .x {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  padding: 25px 0px 0px 25px;
+  font-size: 22px;
+  color: #69707d;
+}
+.container header .header_content i {
+  color: #d8d8d8;
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.container header .header_content img {
+  width: 137px;
+  height: 20px;
+  margin-right: 56px;
+}
+.container header .header_content ul {
+  width: 396px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+.container header .header_content ul li {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  color: #69707d;
+  cursor: pointer;
+}
+.container header .header_content ul li:hover {
+  border-bottom: 4px solid #ff7e1b;
+}
+.container header .basket {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 117px;
+  height: 50px;
+}
+.container header .basket .basket1 {
+  width: 21px;
+  height: 20px;
+  cursor: pointer;
+}
+.container header .basket img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.container header .basket .man:hover {
+  border-radius: 100%;
+  border: 2px solid #ff7e1b;
+}
+.container header .basket .product_num {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  color: #ffffff;
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  width: 20px;
+  height: 15px;
+  background: #ff7e1b;
+  border-radius: 6.5px;
+}
+.container main {
+  margin: 0 auto;
+  width: 1015px;
+  height: 565px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.container main .shoes {
+  width: 445px;
+  height: 100%;
+}
+.container main .shoes .sneaker1 {
+  position: relative;
+  width: 445px;
+  height: 445px;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+.container main .shoes .sneaker1 img {
+  display: none;
+  width: 445px;
+  height: 445px;
+  position: absolute;
+}
+.container main .shoes .sneaker1 .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.container main .shoes .sneaker1 .right1 {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 200px;
+  right: 16px;
+  z-index: 7;
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  border-radius: 100%;
+  background-color: white;
+  cursor: pointer;
+}
+.container main .shoes .sneaker1 .right1:hover {
+  color: #ff7e1b;
+}
+.container main .shoes .sneaker1 .left1 {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 200px;
+  left: 16px;
+  z-index: 7;
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  border-radius: 100%;
+  background-color: white;
+  cursor: pointer;
+}
+.container main .shoes .sneaker1 .left1:hover {
+  color: #ff7e1b;
+}
+.container main .shoes .all_shoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 88px;
+}
+.container main .shoes .all_shoes .first {
+  overflow: hidden;
+}
+.container main .shoes .all_shoes div {
+  cursor: pointer;
+  width: 88px;
+  height: 88px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
+  border-radius: 10px;
+}
+.container main .shoes .all_shoes div img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.container main .shoes .all_shoes div img:hover {
+  opacity: 0.5;
+}
+.container main .shoes .all_shoes div:nth-child(1) {
+  cursor: pointer;
+  width: 88px;
+  height: 88px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
+  border-radius: 10px;
+}
+.container main .information {
+  width: 445px;
+  height: 426px;
+}
+.container main .information h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ff7e1b;
+  margin-bottom: 27px;
+}
+.container main .information h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 48px;
+  color: #1d2026;
+  margin-bottom: 32px;
+}
+.container main .information p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #69707d;
+  margin-bottom: 28px;
+}
+.container main .information .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 64px;
+  margin-bottom: 32px;
+}
+.container main .information .box div {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.container main .information .box .price {
+  height: 100%;
+}
+.container main .information .box .price .discount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+  margin-bottom: 10px;
+}
+.container main .information .box .price .discount h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  color: #1d2026;
+}
+.container main .information .box .price .discount h6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 35px;
+  height: 27px;
+  background: #ffeee2;
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ff7e1b;
+}
+.container main .information .box .price .cost p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration-line: line-through;
+  color: #b6bcc8;
+}
+.container main .information .box .timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  height: 27px;
+  display: flex;
+}
+.container main .information .box .timer h2 {
+  padding-top: 3px;
+  width: 35px;
+  height: 27px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ff7e1b;
+  background: #ffeee2;
+  border-radius: 4px;
+}
+.container main .information .box .timer span {
+  color: #ff7e1b;
+}
+.container main .information .add_toCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 445px;
+  height: 56px;
+}
+.container main .information .add_toCart .count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+  width: 157px;
+  height: 56px;
+  background: #f6f8fd;
+  border-radius: 10px;
+}
+.container main .information .add_toCart .count h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #1d2026;
+}
+.container main .information .add_toCart .count span {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ff7e1b;
+}
+.container main .information .add_toCart .count span:hover {
+  color: #ffab6a;
+}
+.container main .information .add_toCart button {
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  outline: 0;
+  border: 0;
+  width: 272px;
+  height: 56px;
+  background: #ff7e1b;
+  -webkit-box-shadow: 0px 20px 50px -20px #ff7e1b;
+          box-shadow: 0px 20px 50px -20px #ff7e1b;
+  border-radius: 10px;
+}
+.container main .information .add_toCart button:hover {
+  background: #ffab6a;
+}
+.container main .information .add_toCart button img {
+  position: absolute;
+  left: 50px;
+}
+.container main .information .add_toCart button p {
+  position: absolute;
+  top: 18px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.container .cart {
+  display: none;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  width: 360px;
+  height: 256px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 20px 50px -20px rgba(29, 32, 38, 0.503143);
+          box-shadow: 0px 20px 50px -20px rgba(29, 32, 38, 0.503143);
+  border-radius: 10px;
+  z-index: 10;
+}
+.container .cart h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #1d2026;
+  padding-left: 24px;
+  padding-top: 24px;
+  margin-bottom: 24px;
+}
+.container .cart .stripe {
+  width: 100%;
+  height: 1px;
+  background-color: #e4e9f2;
+}
+.container .cart h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #69707d;
+  padding-top: 77px;
+}
+.container .cart.active {
+  display: block;
+}
+
+.slider {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 6;
+  position: absolute;
+  background-color: rgba(14, 11, 11, 0.826);
+}
+.slider .shoes1 {
+  position: relative;
+  width: 445px;
+}
+.slider .shoes1 .xx {
+  cursor: pointer;
+  position: absolute;
+  top: -48px;
+  right: -20px;
+  z-index: 8;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  color: #d8d8d8;
+}
+.slider .shoes1 .xx:hover {
+  color: #ff7e1b;
+}
+.slider .shoes1 .sneaker2 {
+  position: relative;
+  width: 445px;
+  height: 445px;
+  margin-bottom: 32px;
+}
+.slider .shoes1 .sneaker2 .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  z-index: 7;
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  border-radius: 100%;
+  background-color: white;
+  cursor: pointer;
+}
+.slider .shoes1 .sneaker2 .right:hover {
+  color: #ff7e1b;
+}
+.slider .shoes1 .sneaker2 .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  z-index: 7;
+  width: 56px;
+  font-size: 24px;
+  height: 56px;
+  border-radius: 100%;
+  background-color: white;
+  cursor: pointer;
+}
+.slider .shoes1 .sneaker2 .left:hover {
+  color: #ff7e1b;
+}
+.slider .shoes1 .sneaker2 img {
+  display: none;
+  width: 445px;
+  height: 445px;
+  position: absolute;
+}
+.slider .shoes1 .sneaker2 .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.slider .shoes1 .all_shoes1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 88px;
+}
+.slider .shoes1 .all_shoes1 .first {
+  overflow: hidden;
+}
+.slider .shoes1 .all_shoes1 div {
+  cursor: pointer;
+  width: 88px;
+  height: 88px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
+  border-radius: 10px;
+}
+.slider .shoes1 .all_shoes1 div img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.slider .shoes1 .all_shoes1 div img:hover {
+  opacity: 0.5;
+}
+.slider .shoes1 .all_shoes1 div:nth-child(1) {
+  cursor: pointer;
+  width: 88px;
+  height: 88px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1120px) {
+  .container {
+    height: 100%;
+    width: 100%;
+  }
+  .container header {
+    padding: 20px;
+  }
+  .container header .header_content {
+    width: 100%;
+  }
+  .container main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .container {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .container header {
+    padding: 0;
+    padding-top: 10px;
+  }
+  .container header .header_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 16px;
+    width: 327px;
+  }
+  .container header .header_content i {
+    padding-left: 24px;
+    display: block;
+  }
+  .container header .header_content ul {
+    display: none;
+  }
+  .container header .header_content .menu {
+    z-index: 11;
+  }
+  .container header .header_content .menu .toggle {
+    z-index: 12;
+  }
+  .container header .basket {
+    padding-right: 24px;
+  }
+  .container main {
+    width: 100%;
+  }
+  .container main .shoes .sneaker1 {
+    width: 100%;
+  }
+  .container main .shoes .sneaker1 img {
+    width: 100%;
+  }
+  .container main .shoes .sneaker1 .right1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container main .shoes .sneaker1 .left1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container main .shoes .all_shoes {
+    display: none;
+  }
+  .container main .information .add_toCart {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .container header {
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+  .container header .header_content {
+    gap: 16px;
+    width: 327px;
+  }
+  .container header .header_content i {
+    padding-left: 24px;
+    display: block;
+  }
+  .container header .header_content ul {
+    display: none;
+  }
+  .container header .header_content img {
+    margin-right: 0;
+  }
+  .container header .basket {
+    padding-right: 24px;
+  }
+  .container header .basket .basket1 {
+    margin-right: 5px;
+  }
+  .container main {
+    width: 100%;
+  }
+  .container main .shoes {
+    margin-bottom: 30px;
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin-bottom: 420px;
+  }
+  .container main .shoes .sneaker1 {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: 100%;
+  }
+  .container main .shoes .sneaker1 img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+  .container main .shoes .all_shoes {
+    display: none;
+  }
+  .container main .information {
+    width: 100%;
+  }
+  .container main .information h1 {
+    padding-left: 24px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1.84615px;
+    text-transform: uppercase;
+    color: #ff7e1b;
+  }
+  .container main .information h3 {
+    width: 327px;
+    padding-left: 24px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    color: #1d2026;
+  }
+  .container main .information p {
+    padding-left: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #69707d;
+    margin-bottom: 50px;
+  }
+  .container main .information .box {
+    padding-left: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .container main .information .box .timer {
+    margin-bottom: 28px;
+  }
+  .container main .information .box .price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container main .information .box .price .cost {
+    width: 100px;
+    height: 35px;
+    padding-right: 10px;
+  }
+  .container main .information .add_toCart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 116px;
+    width: 100%;
+  }
+  .container main .information .add_toCart .count {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 327px;
+    margin-bottom: 16px;
+  }
+  .container main .information .add_toCart button {
+    width: 327px;
+  }
+  .container .cart {
+    width: 90%;
+    position: absolute;
+    top: 90px;
+    right: 20px;
+  }
+}
+@media only screen and (max-width: 1420px) {
+  .slider .shoes1 .sneaker2 {
+    position: relative;
+  }
+  .slider .shoes1 .sneaker2 .xx {
+    position: absolute;
+    right: -60px;
+    top: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
