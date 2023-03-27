@@ -422,8 +422,6 @@ function cart(){
 
         }
     })
-
-    
     // console.log(zero.innerText);
 }
 
