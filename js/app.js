@@ -290,7 +290,6 @@ function cart(){
     product_numh4 = document.querySelector('.product_num h4'),
     product_num = document.querySelector('.product_num')
 
-
     basket.addEventListener('click', () => {
         cart.classList.toggle('active')
     })
@@ -421,7 +420,30 @@ function cart(){
         product_numh4.innerText = zero.innerText
 
         }
+        let product1 = document.querySelector('.product'),
+            check1 = document.querySelector('.check')
+            if(zero.innerText == 0){
+                product1.style.display = 'none'
+                product_num.style.display = 'none'
+                check1.style.display = 'none'
+                cart.innerHTML += `
+                    <h3 class='empty'>Your cart is empty.</h3>
+                `
+                let empty = document.querySelector('.empty')
+                empty.style.cssText = `
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                text-align: center;
+                color: #69707d;
+                padding-top: 37px;
+                text-align: center;
+                `
+            }
     })
+
+    
+    
     // console.log(zero.innerText);
 }
 
