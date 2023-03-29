@@ -177,20 +177,20 @@ function sliderOpenClose(){
         right = document.querySelector('.right'),
         left = document.querySelector('.left')
 
-openSliderMenu.addEventListener('click', () => {
-    if(screen.width > 685){
-        slider.style.display = 'flex'
-        document.body.style.cssText = `
-            overflow: hidden;
-        `
-    }
-})
+    openSliderMenu.addEventListener('click', () => {
+        if(screen.width > 685){
+            slider.style.display = 'flex'
+            // document.body.style.cssText = `
+            //     overflow: hidden;
+            // `
+        }
+    })
 
-closeSliderMenu.addEventListener('click', () => {
-    slider.style.display = 'none'
-    document.body.style.cssText =  `
-        overflow: scroll;
-    `
+    closeSliderMenu.addEventListener('click', () => {
+        slider.style.display = 'none'
+        // document.body.style.cssText =  `
+        //     overflow: scroll;
+        // `
 })
 
 
@@ -230,7 +230,6 @@ function removeActiveClasses(){
 window.addEventListener('click', (e) => {
    if(e.target == slider){
         slider.style.display = 'none'
-        document.body.style.overflow = 'scroll'
    }
 })
 
@@ -282,7 +281,7 @@ function removeActiveClass2(){
 
 mobileSlider()
 
-function cart(){
+function addToCart(){
     const cart = document.querySelector('.cart'),
     basket = document.querySelector('.basket1'),
     zero = document.querySelector('.zero'),
@@ -324,6 +323,8 @@ function cart(){
             product_reference_span = document.querySelector('.product_reference span'),
             del = document.querySelector('.del'),
             check = document.querySelector('.check')
+
+        cart.classList.add('active')
 
         del.addEventListener('click', () => {
             product.style.display = 'none'
@@ -447,4 +448,4 @@ function cart(){
     // console.log(zero.innerText);
 }
 
-cart()
+addToCart()
