@@ -180,17 +180,17 @@ function sliderOpenClose(){
     openSliderMenu.addEventListener('click', () => {
         if(screen.width > 685){
             slider.style.display = 'flex'
-            // document.body.style.cssText = `
-            //     overflow: hidden;
-            // `
+            document.body.style.cssText = `
+                overflow: hidden;
+            `
         }
     })
 
     closeSliderMenu.addEventListener('click', () => {
         slider.style.display = 'none'
-        // document.body.style.cssText =  `
-        //     overflow: scroll;
-        // `
+        document.body.style.cssText =  `
+            overflow: scroll;
+        `
 })
 
 
@@ -230,6 +230,9 @@ function removeActiveClasses(){
 window.addEventListener('click', (e) => {
    if(e.target == slider){
         slider.style.display = 'none'
+        document.body.style.cssText =  `
+            overflow: scroll;
+        `
    }
 })
 
@@ -333,7 +336,6 @@ function addToCart(){
             cart.innerHTML += `
                 <h3 class='empty'>Your cart is empty.</h3>
             `
-            zero.innerText = 0
             const carth3 = document.querySelector('.cart .empty')
             carth3.style.cssText = `
                 font-style: normal;
@@ -421,26 +423,6 @@ function addToCart(){
         product_numh4.innerText = zero.innerText
 
         }
-        let product1 = document.querySelector('.product'),
-            check1 = document.querySelector('.check')
-            if(zero.innerText == 0){
-                product1.style.display = 'none'
-                product_num.style.display = 'none'
-                check1.style.display = 'none'
-                cart.innerHTML += `
-                    <h3 class='empty'>Your cart is empty.</h3>
-                `
-                let empty = document.querySelector('.empty')
-                empty.style.cssText = `
-                font-style: normal;
-                font-weight: 700;
-                font-size: 16px;
-                text-align: center;
-                color: #69707d;
-                padding-top: 37px;
-                text-align: center;
-                `
-            }
     })
 
     

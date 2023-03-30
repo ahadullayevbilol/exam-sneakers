@@ -737,8 +737,9 @@ body {
                 .add_toCart {
                     display: flex;
                     align-items: center;
+                    justify-content: center;
                     flex-direction: column;
-                    height: 116px;
+                    height: 210px;
                     width: 100%;
                     .count {
                         display: flex;
