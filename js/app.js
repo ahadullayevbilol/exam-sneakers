@@ -302,7 +302,7 @@ function addToCart(){
             <div class='stripe'></div>
             <div class='product'>
                 <div class='product_img'>
-                    <img src="img/sneaker.png" alt="">
+                    <img src='img/sneaker.png' alt="">
                 </div>
                 <div class='product_reference'>
                     <h3>Fall Limited Edition Sneakers</h3>
@@ -316,6 +316,14 @@ function addToCart(){
                 <p>Checkout</p>
             </div>
     `
+            let sneakerImg = document.querySelectorAll('.sneaker1 img')
+            let product_img1 = document.querySelector('.product_img img')
+                sneakerImg.forEach(item => {
+                if(item.classList.contains('active')){
+                    product_img1.setAttribute('src', item.src)
+                }
+            })
+            
         const product = document.querySelector('.product'),
             stripe = document.querySelector('.stripe'),
             product_img = document.querySelector('.product_img'),
@@ -326,6 +334,9 @@ function addToCart(){
             product_reference_span = document.querySelector('.product_reference span'),
             del = document.querySelector('.del'),
             check = document.querySelector('.check')
+            
+
+            
 
         cart.classList.add('active')
 
