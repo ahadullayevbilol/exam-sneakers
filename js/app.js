@@ -306,7 +306,7 @@ function addToCart(){
                 </div>
                 <div class='product_reference'>
                     <h3>Fall Limited Edition Sneakers</h3>
-                    <h4>$125.00 x ${zero.innerText}  <span>$${125.00 * zero.innerText + '.' + '00'}</span></h4>
+                    <h4>$125.00 x ${zero.innerText}  <span>$${125.00 * zero.innerText + '.00'}</span></h4>
                 </div>
                 <div class='del'>
                     <img src="img/delete.png" alt="">
